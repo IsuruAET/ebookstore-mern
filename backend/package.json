@@ -1,13 +1,15 @@
 {
-  "name": "book-marketplace-backend",
+  "name": "ebookstore-backend",
   "version": "1.0.0",
   "description": "Backend for Book Marketplace platform",
   "main": "dist/server.js",
+  "private": true,
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon server.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.17",
