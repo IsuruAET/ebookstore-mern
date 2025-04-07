@@ -1,13 +1,13 @@
 # EbookStore MERN Monorepo
 
-A full-stack ebook store application built with MERN stack (MongoDB, Express, React, Node.js) using a monorepo structure.
+A full-stack ebook store application built with Vite (React), Node.js, Express, and MongoDB using a monorepo structure.
 
 ## Project Structure
 
 ```
 ebookstore-mern/
-├── frontend/          # React frontend application
-├── backend/           # Node.js backend application
+├── frontend/          # Vite + React frontend application
+├── backend/           # Node.js + Express backend application
 └── .github/          # GitHub Actions workflows
 ```
 
@@ -58,6 +58,46 @@ cd frontend
 npm run dev
 ```
 
+## Development Scripts
+
+### Frontend (Vite)
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run tests
+npm run test
+```
+
+### Backend (Node/Express)
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run tests
+npm test
+```
+
 ## Deployment
 
 This project uses GitHub Actions for CI/CD and Vercel for hosting. The deployment is configured to:
@@ -65,6 +105,22 @@ This project uses GitHub Actions for CI/CD and Vercel for hosting. The deploymen
 - Deploy frontend changes to Vercel frontend project
 - Deploy backend changes to Vercel backend project
 - Deploy both if changes are made to both
+
+### Vercel Configuration
+
+#### Frontend Project
+
+- Framework Preset: Vite
+- Build Command: `cd frontend && npm install && npm run build`
+- Output Directory: `frontend/dist`
+- Install Command: `cd frontend && npm install`
+
+#### Backend Project
+
+- Framework Preset: Node.js
+- Build Command: `cd backend && npm install && npm run build`
+- Output Directory: `backend/dist`
+- Install Command: `cd backend && npm install`
 
 ## Contributing
 
