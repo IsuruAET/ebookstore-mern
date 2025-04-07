@@ -113,5 +113,3 @@ frontend/
 - [Stripe](https://docs.stripe.com/)
 
 ---
-
-Test
