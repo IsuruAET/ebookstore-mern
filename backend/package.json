@@ -8,8 +8,7 @@
     "start": "node dist/server.js",
     "dev": "nodemon server.ts",
     "build": "tsc",
-    "test": "jest",
-    "lint": "eslint . --ext .ts"
+    "test": "jest"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.17",
